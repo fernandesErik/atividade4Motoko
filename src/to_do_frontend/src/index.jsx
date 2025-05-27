@@ -24,11 +24,7 @@ function Index() {
           agent,
         });
 
-        const principalText = await actorLoginBackend.get_principal_client();
-        setPrincipal(principalText);
         setIsLoggedIn(true);
-        console.log(principalText);
-
         navigate("/tarefas");
       },
       windowOpenerFeatures: `
